@@ -181,7 +181,7 @@ end
 %w[
   pngcrush pngout optipng advpng
   jhead jpegoptim jpegtran
-  gifsicle
+  gifsicle zopfli
 ].each do |worker|
   require "image_optim/worker/#{worker}"
 end
