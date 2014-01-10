@@ -16,6 +16,8 @@ before_install:
   - tar -xzf pngout-*-linux.tar.gz
   - mv pngout-*-linux pngout-linux
   - git clone https://code.google.com/p/zopfli/
+   # `bundle install` doesn't like nested git repositories in 1.8 versions.
+  - rm -rf zopfli/.git
   - make -C zopfli/ zopflipng
 env:
   - PATH=pngout-linux/x86_64:zopfli/:$PATH
