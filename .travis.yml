@@ -19,5 +19,6 @@ before_install:
    # `bundle install` doesn't like nested git repositories in 1.8 versions.
   - rm -rf zopfli/.git
   - make -C zopfli/ zopflipng
+  - zopflipng
 env:
   - PATH=pngout-linux/x86_64:zopfli/:$PATH
