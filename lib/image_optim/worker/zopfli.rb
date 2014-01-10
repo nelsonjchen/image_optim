@@ -8,7 +8,7 @@ class ImageOptim
       end
 
       def optimize(src, dst)
-        args = %W[-m #{src} #{dst}]
+        args = %W[--always_zopflify #{src} #{dst}]
         execute(:zopflipng, *args) && optimized?(src, dst)
       end
     end
