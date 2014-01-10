@@ -187,6 +187,10 @@ Worker can be disabled by passing false instead of options hash.
 ### gifsicle
 * `:interlace` — Turn interlacing on *(defaults to false)*
 
+### zopfli
+
+* Nothing for now. `-m` is hardcoded in and `zopflipng` heuristicly uses its own values.
+
 <!---</worker-options>-->
 
 ## Copyright
