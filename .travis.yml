@@ -21,5 +21,6 @@ before_install:
   - make -C zopfli/ zopflipng
   - mkdir zopflipng-linux && mv zopfli/zopflipng zopflipng-linux
   - rm -rf zopfli/
+  - pwd
 env:
   - PATH=pngout-linux/x86_64:zopflipng-linux/:$PATH
