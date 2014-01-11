@@ -10,6 +10,7 @@ Optimize (lossless compress) images (jpeg, png, gif) using external utilities:
 * [optipng](http://optipng.sourceforge.net/)
 * [pngcrush](http://pmt.sourceforge.net/pngcrush/)
 * [pngout](http://www.advsys.net/ken/util/pngout.htm)
+* [zopfli](https://code.google.com/p/zopfli/)
 
 Based on [ImageOptim.app](http://imageoptim.com/).
 
@@ -185,6 +186,10 @@ Worker can be disabled by passing false instead of options hash.
 
 ### gifsicle
 * `:interlace` — Turn interlacing on *(defaults to false)*
+
+### zopfli
+
+* Nothing for now. `-m` is hardcoded in and `zopflipng` heuristicly uses its own values.
 
 <!---</worker-options>-->
 
